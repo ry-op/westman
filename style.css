@@ -1,0 +1,31 @@
+:root {
+  font-family: sans-serif;
+}
+section {
+  line-height: 1.5;
+  display: grid;
+  grid-template-columns: 1fr 28rem 26rem 26rem 1fr;
+  grid-template-areas: ". i l t .";
+  grid-gap: 1rem;
+  margin: 0.5rem 0;
+}
+section a {
+  grid-area: i;
+}
+section img {
+  display: block;
+  width: 28rem;
+  height: 40rem;
+  object-fit: contain;
+}
+section blockquote {
+  white-space: pre;
+  padding: 0;
+  margin: 0;
+  grid-area: l;
+}
+section div {
+  white-space: pre;
+  margin: 0;
+  grid-area: t;
+}
