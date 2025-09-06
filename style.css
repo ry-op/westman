@@ -18,14 +18,23 @@ section img {
   height: 40rem;
   object-fit: contain;
 }
-section blockquote {
+section blockquote,
+section div {
   white-space: pre;
   padding: 0;
   margin: 0;
+  align-self: center;
+}
+section blockquote {
   grid-area: l;
 }
 section div {
-  white-space: pre;
-  margin: 0;
   grid-area: t;
+}
+s.r {
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  transform: rotate(180deg);
+  transform-origin: center 0.67rem;
 }
